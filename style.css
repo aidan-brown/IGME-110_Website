@@ -1,35 +1,276 @@
+@font-face {
+    font-family: Airborne;
+    src: url(fonts/AIRBORNEGP.ttf);
+}
+@font-face {
+    font-family: AndroidAssassin;
+    src: url(fonts/AndroidAssassin.ttf);
+}
+@font-face {
+    font-family: Quantum;
+    src: url(fonts/Quantum.otf);
+}
+@font-face {
+    font-family: CaviarDreams;
+    src: url(fonts/CaviarDreams.ttf);
+}
+
 h1 {
     color: #141d26;
-    font-family: Impact;
+    font-family: Quantum;
+    text-align: center;
+}
+h2 {
+    color: #5278a5;
+    font-family: Quantum;
+    text-align: center;
+    font-size: 48px;
 }
 h3 {
-    color: #364f6d;
-    font-family: Impact;
+    color: #496b93;
+    font-family: Quantum;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
 }
 p {
-    color: #5278a5;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #496b93;
+    font-family: CaviarDreams;
+    font-weight: bold;
     text-align: center;
+}
+a{
+    color: #5278a5;
+    font-family: Impact;
+}
+p a:hover {
+    color: #618fc6;
 }
 body {
     background-color: #141d26;
 }
-input {
+.heading-button, .origin-button input, .legacy-button input {
     color: #6796ce;
     background-color: #141d26;
     outline: hidden;
     border: hidden;
     font-family: Impact;
-    padding: 10px;
+    font-size: 32px;
+    padding: 2px 0px 2px 0px;
+    width: 100%;
+    text-align: center;
+}
+.origin-button-hidden input, .legacy-button-hidden input {
+    color: #6796ce;
+    background-color: #141d26;
+    outline: hidden;
+    border: hidden;
+    font-family: Impact;
+    font-size: 16px;
+    padding: 0px;
+    width: 100px;
+    text-align: center;
+}
+.origin-button-hidden, .legacy-button-hidden{
+    margin: 0px -2px 0px -2px;
 }
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-#heading {
+.navbar {
     background-color: #364e66;
-    border-color: #364e66;
-    padding: 10px 10px 2px 10px;
-    margin: -10px -10px 0px -10px;
+    border-color: #293d51;
+    float: left;
+    width: 250px;
+    height: 101vh;
+    text-align: center;
+    margin: -15px 10px 0px -10px;
+    display: none;
+    border-style: hidden;
+    border-right-style: solid;
+}
+.navbar h1{
+    background-color: #141d26;
+    color: #6796ce;
+    padding: 25px;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-width: 5px;
+    border-color: #293d51;
+}
+.legacy-hidden, .origin-hidden {
+    display: none;
+}
+.legacy:hover .legacy-hidden {
+    display: inline-block;
+    text-align: center;
+}
+.origin:hover .origin-hidden {
+    display: inline-block;
+    text-align: center;
+}
+.heading a:hover input {
+    background-color: #293d51;
+    color: #141d26;
+}
+.footer {
+    position: absolute;
+    bottom: 0px;
+    margin-left: 10%;
+    text-align: center;
+}
+.footer p {
+    color: #141d26;
+    text-align: center;
+}
+.heading {
+    position: fixed;
+}
+.nav-button {
+    float: left;
+    margin: -10px 0px 0px -10px;
+    background-color: #364e66;
+    border-style: groove;
+    border-left-style: none;
+    border-color: #293d51;
+}
+.heading:active .navbar, .navbar:hover {
+    display: block;
+}
+.parallax{
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buttons {
+    background-color: #141d26;
+    height: 65%;
+    border-bottom-style: groove;
+    border-top-style: groove;
+    border-width: 5px;
+    border-color: #293d51;
+}
+#index-img {
+    background-image: url("images/metroidvania.jpg");
+    background-position-y: 80px;
+    width: 100%;
+    height: 750px;
+}
+#jersey-img {
+    background-image: url("images/jersey_shore.jpg");
+    background-position: right;
+    width: 100%;
+    height: 750px;
+}
+#portal-img {
+    background-image: url("images/portal2.jpg");
+    width: 100%;
+    height: 500px;
+}
+#skyrim-img {
+    background-image: url("images/skyrim.jpg");
+    width: 100%;
+    height: 500px;
+}
+#divinity-img {
+    background-image: url("images/DOS2.jpg");
+    width: 100%;
+    height: 500px;
+}
+#jc3-img {
+    background-image: url("images/just_cause.jpg");
+    width: 100%;
+    height: 500px;
+}
+#pokemon-img {
+    background-image: url("images/fire_red.jpg");
+    width: 100%;
+    height: 500px;
+}
+#zelda-img {
+    background-image: url("images/botw.jpg");
+    width: 100%;
+    height: 500px;
+}
+#ssb-img {
+    background-image: url("images/ssb.jpg");
+    width: 100%;
+    height: 500px;
+}
+#metroid-main-img {
+    background-image: url("images/metroid.jpg");
+    width: 100%;
+    height: 500px;
+}
+#castle-main-img {
+    background-image: url("images/castle.jpg");
+    width: 100%;
+    height: 500px;
+}
+#hollow-main-img {
+    background-image: url("images/hollow.jpg");
+    width: 100%;
+    height: 500px;
+}
+#hollow-one-img {
+    background-image: url("images/hollow1.jpg");
+    width: 100%;
+    height: 500px;
+}
+#hollow-two-img {
+    background-image: url("images/hollow2.jpg");
+    width: 100%;
+    height: 500px;
+}
+#cells-main-img {
+    background-image: url("images/cells.jpg");
+    width: 100%;
+    height: 500px;
+}
+#cells-one-img {
+    background-image: url("images/cells1.jpg");
+    width: 100%;
+    height: 500px;
+}
+#cells-two-img {
+    background-image: url("images/cells2.jpg");
+    width: 100%;
+    height: 500px;
+}
+.game-card {
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 98%;
+    padding: 10px;
+    background-color: #48627c;
+    border-style: groove;
+    border-width: 5px;
+    border-color: #39536d;
+}
+.game-card p, .game-card a{
+    text-align: left;
+    color: #141d26;
+}
+.game-card a{
+    font-family: Quantum;
+    font-size: 32px;
+    font-weight: bold;
+}
+.game-card a:hover{
+    color: #243444;
+}
+#rit{
+    position: fixed;
+    margin-left: 50px;
+    bottom: 70px;
+}
+.buttons p{
+    position: fixed;
+    margin-left: 25px;
+    width: 200px;
+    bottom: 155px;
 }

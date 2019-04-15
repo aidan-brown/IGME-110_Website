@@ -6,22 +6,68 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    <div id="heading">
-        <a href="index.html"><input type="button" value="Home" /></a>
-        <a href="games.html"><input type="button" value="Games" /></a>
-        <a href="originMetroid.html"><input type="button" value="Origin - Super Metroid" /></a>
-        <a href="originCastle.html"><input type="button" value="Origin - Castlevania" /></a>
-        <a href="legacyCells.html"><input type="button" value="Legacy - Dead Cells" /></a>
-        <a href="legacyHollow.html"><input type="button" value="Legacy - Hollow Knight" /></a>
-        <h1>
-            Aidan Brown <br />
-            IGME-110
-        </h1>
+
+    <div class="heading">
+        <div class="navbar">
+            <h1>
+                Metroidvania<br />
+                Then and Now
+            </h1>
+            <div class="buttons">
+                <a href="index.html"><input type="button" value="Home" class="heading-button" /></a>
+                <a href="pages/games.html"><input type="button" value="Favorite Games" class="heading-button" /></a>
+
+                <div class="origin">
+                    <a class="origin-button"><input type="button" value="Origin" /></a>
+                    <div class="origin-hidden">
+                        <a href="pages/originMetroid.html" class="origin-button-hidden"><input type="button" value="Super Metroid" /></a>
+                        <a href="pages/originCastle.html" class="origin-button-hidden"><input type="button" value="Castlevania" /></a>
+                    </div>
+                </div>
+                <div class="legacy">
+                    <a class="legacy-button"><input type="button" value="Legacy" /></a>
+                    <div class="legacy-hidden">
+                        <a href="pages/legacyCells.html" class="legacy-button-hidden"><input type="button" value="Dead Cells" /></a>
+                        <a href="pages/legacyHollow.html" class="legacy-button-hidden"><input type="button" value="Hollow Knight" /></a>
+                    </div>
+                </div>
+                <a href="pages/worksCited.html"><input type="button" value="Works Cited" class="heading-button" /></a>
+                <p>
+                    This website is dedicated to the subgenre of adventure games known as Metroidvanias.
+                </p>
+                <img src="images/RIT.png" width="150" height="50" id="rit"/>
+            </div>
+
+            <div class="footer">
+                <p>
+                    Aidan Brown - IGME 110
+                </p>
+            </div>
+        </div>
+        <button class="nav-button"><img src="images/icon.png" width="20" height="20" /></button>
     </div>
-    <p>
-        Hello!
-    </p>
-    <p>I am a first year GDD at RIT. I am from Brick, New Jersey which is right near central Jersey and right by the beach. In my free time I love to play a lot of different games from a lot of different genres.</p>
-    <img src="images/mountain_lake.jpeg" alt="A lake reflecting a mountain in the distance" height="500" width="400" />
+
+    <div class="content">
+        <br />
+        <h2>Welcome To<br />
+        Metroidvanias: Now and Then</h2>
+        <div class="parallax" id="jersey-img"></div>
+
+        <h2>About Me</h2>
+        <p>Hello! My name is Aidan Brown, a first year GDD here at RIT. I am originally from Brick, New Jersey, a somewhat small town in central Jersey right near the Jersey shore. In my free time I love to play a lot of different games from a lot of different genres.</p>
+        <div class="parallax" id="index-img"></div>
+
+        <h2>About Metroidvanias</h2>
+        <p>A metroidvania is a type of game that focus mainly on discovery, exploration, and fluid combat throughout a large interconnected map. In many metroidvanias the player usually starts out weak without many powers, but through exploration they slowly gain powers and increase their arsenal. One of the key gameplay components of a metroidvania is the use of backtracking or the practice of using new powers on parts of the map that have been explored before. As a player gains new movement powers, areas of the map that were previously unreachable are now within the reach of the player which in turn gives the player incentive to go back and explore the areas that they couldn’t before. Another staple in the metroidvania genre is lack of tutorials, most metroidvanias teach the players through gameplay rather than telling the player what to do. These games rely mostly on the player’s intuition and ability to learn through failure in order to get gameplay mechanics across.</p>
+        <div class="parallax" id="hollow-one-img"></div>
+
+        <h2>Background of Metroidvanias</h2>
+        <p>
+            Metroidvanias were popularized after the release of the two games that pioneered the genre and also gave name to the genre, Super Metroid and Castlevania: Symphony of the Night. Although these games gave life to this style of game many underlying elements of metroidvanias can be seen in games such as The Legend of Zelda (“Metroidvania (Concept)”). In an interview Castlevania: Symphony of the Night creator, Koji Igarashi, stated, “I was actually surprised by the name. In my heart, I really wanted to create a Legend of Zelda style game. But I suppose that when you turn Zelda into a 2D platformer, yes, it resembles Metroid” (Wahlberg). The earliest use of the word metroidvania that I could track was post on Usenet from 2001 by a man named Rich Hutnik and since then the term has been used to describe countless games (Hutnik). Fans of both series loved this term and adopted it as their own (Lee).<br />
+            <br />
+            <a href="pages/originMetroid.html">Super Metroid</a><br />
+            <a href="pages/originCastle.html">Castlevania: Symphony of the Knight</a>
+        </p>
+    </div>
 </body>
 </html>
